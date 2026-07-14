@@ -1,8 +1,8 @@
 # GemmaEdge V2
 
-A fully offline LLM runtime optimized for 8GB VRAM hardware. Designed to orchestrate multiple specialist agents locally without encountering out-of-memory errors.
+A fully offline LLM runtime optimized for 8GB VRAM hardware, designed for multi-agent orchestration without memory fragmentation.
 
-## Features
-* **Strict Memory Control:** Utilizes a custom VRAM cycle controller for single-model isolation.
-* **MishaSelector Routing:** A deterministic semantic router using CPU-bound models.
-* **Isolated Memory:** Agent-specific RAM-based vector stores.
+## Core Capabilities
+* **Memory Management:** Atomic load/unload cycles for single-model isolation.
+* **Deterministic Routing:** MishaSelector semantic pipeline using CPU-bound embedding backends.
+* **Storage:** Agent-specific RAM-based vector stores for zero semantic bleed.
