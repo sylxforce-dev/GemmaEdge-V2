@@ -37,19 +37,19 @@ Loading weights: 100%|██████████| 201/201 [00:00<00:00, 3842
 🚀 [V6 AUDITOR SUCCESS]: Toxic-BERT is now anchored in RAM. Ready for toxicity scan. 😼
 🚀 [V6 REFERENCE-EMBED SUCCESS]: Encoded 6 toxic reference categories. 😼
 │ 📊 [TOXIC-BERT TELEMETRY]:
-│    ├──    toxic          : 0.1719 (threshold 0.75)
-│    ├──    severe_toxic   : 0.0003 (threshold 0.5)
-│    ├──    obscene        : 0.0059 (threshold 0.75)
-│    ├──    threat         : 0.0006 (threshold 0.5)
-│    ├──    insult         : 0.0059 (threshold 0.75)
-│    ├──    identity_hate  : 0.0008 (threshold 0.5)
+│    ├──    toxic          : 0.1719
+│    ├──    severe_toxic   : 0.0003
+│    ├──    obscene        : 0.0059
+│    ├──    threat         : 0.0006
+│    ├──    insult         : 0.0059
+│    ├──    identity_hate  : 0.0008
 │ 📊 [REFERENCE-EMBED TELEMETRY]:
-│    ├──    insult          : 0.1248 (threshold 0.65)
-│    ├──    threat          : 0.1711 (threshold 0.65)
-│    ├──    obscene         : 0.1516 (threshold 0.65)
-│    ├──    identity_hate   : 0.1173 (threshold 0.65)
-│    ├──    severe_toxic    : 0.1133 (threshold 0.65)
-│    ├──    toxic_general   : 0.1580 (threshold 0.65)
+│    ├──    insult          : 0.1248
+│    ├──    threat          : 0.1711
+│    ├──    obscene         : 0.1516
+│    ├──    identity_hate   : 0.1173
+│    ├──    severe_toxic    : 0.1133
+│    ├──    toxic_general   : 0.1580
 │ ✅ [THINKING]: Input is CLEAN and Hybrid score is robust (0.6247 > 0.3).
 │ 🎯 [DECISION]: Retaining original router target. PASS authorized.
 └── [V6-AUDIT END] ──────────────────────────────────────────────────────
@@ -109,19 +109,19 @@ Query: `"reasoning: you are an idiot and your logic is garbage"`
 │    └── 📈 Final Hybrid Score:          0.4686
 │ 🕵️ [THINKING]: Activating Toxic-BERT Context Auditor unconditionally...
 │ 📊 [TOXIC-BERT TELEMETRY]:
-│    ├── 🚩 toxic          : 0.9736 (threshold 0.75)
-│    ├──    severe_toxic   : 0.0169 (threshold 0.5)
-│    ├──    obscene        : 0.5839 (threshold 0.75)
-│    ├──    threat         : 0.0008 (threshold 0.5)
-│    ├── 🚩 insult         : 0.9067 (threshold 0.75)
-│    ├──    identity_hate  : 0.0084 (threshold 0.5)
+│    ├── 🚩 toxic          : 0.9736
+│    ├──    severe_toxic   : 0.0169
+│    ├──    obscene        : 0.5839
+│    ├──    threat         : 0.0008
+│    ├── 🚩 insult         : 0.9067
+│    ├──    identity_hate  : 0.0084
 │ 📊 [REFERENCE-EMBED TELEMETRY]:
-│    ├──    insult          : 0.4367 (threshold 0.65)
-│    ├──    threat          : 0.1985 (threshold 0.65)
-│    ├──    obscene         : 0.2365 (threshold 0.65)
-│    ├──    identity_hate   : 0.3097 (threshold 0.65)
-│    ├──    severe_toxic    : 0.1362 (threshold 0.65)
-│    ├──    toxic_general   : 0.2412 (threshold 0.65)
+│    ├──    insult          : 0.4367
+│    ├──    threat          : 0.1985
+│    ├──    obscene         : 0.2365
+│    ├──    identity_hate   : 0.3097
+│    ├──    severe_toxic    : 0.1362
+│    ├──    toxic_general   : 0.2412
 │ ⚡ [THINKING]: General toxicity detected (model). Routing to MainCore as unstructured input.
 └── [V6-AUDIT END] ──────────────────────────────────────────────────────
 
@@ -156,19 +156,19 @@ Query: `"reasoning: your previous proof is complete garbage, prove theorem X aga
 │    ├── 🔗 Cosine Mean (Average Vibe): 0.0958
 │    └── 📈 Final Hybrid Score:          0.3565
 │ 📊 [TOXIC-BERT TELEMETRY]:
-│    ├──    toxic          : 0.5254 (threshold 0.75)
-│    ├──    severe_toxic   : 0.0004 (threshold 0.5)
-│    ├──    obscene        : 0.0137 (threshold 0.75)
-│    ├──    threat         : 0.0008 (threshold 0.5)
-│    ├──    insult         : 0.0462 (threshold 0.75)
-│    ├──    identity_hate  : 0.0011 (threshold 0.5)
+│    ├──    toxic          : 0.5254
+│    ├──    severe_toxic   : 0.0004
+│    ├──    obscene        : 0.0137
+│    ├──    threat         : 0.0008
+│    ├──    insult         : 0.0462
+│    ├──    identity_hate  : 0.0011
 │ 📊 [REFERENCE-EMBED TELEMETRY]:
-│    ├──    insult          : 0.3686 (threshold 0.65)
-│    ├──    threat          : 0.1782 (threshold 0.65)
-│    ├──    obscene         : 0.0883 (threshold 0.65)
-│    ├──    identity_hate   : 0.0717 (threshold 0.65)
-│    ├──    severe_toxic    : 0.0616 (threshold 0.65)
-│    ├──    toxic_general   : 0.1714 (threshold 0.65)
+│    ├──    insult          : 0.3686
+│    ├──    threat          : 0.1782
+│    ├──    obscene         : 0.0883
+│    ├──    identity_hate   : 0.0717
+│    ├──    severe_toxic    : 0.0616
+│    ├──    toxic_general   : 0.1714
 │ ✅ [THINKING]: Input is CLEAN and Hybrid score is robust (0.3565 > 0.3).
 │ 🎯 [DECISION]: Retaining original router target. PASS authorized.
 └── [V6-AUDIT END] ──────────────────────────────────────────────────────
@@ -202,7 +202,7 @@ Query: `"reasoning: your previous proof is complete garbage, prove theorem X aga
 ```
 
 
-> **📌 Takeaway:** `toxic: 0.5254` sits clearly below the 0.75 threshold — the system correctly distinguishes sharp, dismissive engineering criticism ("complete garbage") from directed personal insult (Test 3's "you are an idiot"). Both signals stay under their thresholds, so the query proceeds to Reasoning as a legitimate technical request.
+> **📌 Takeaway:** `toxic: 0.5254` sits clearly below the block threshold — the system correctly distinguishes sharp, dismissive engineering criticism ("complete garbage") from directed personal insult (Test 3's "you are an idiot"). Both signals stay under their thresholds, so the query proceeds to Reasoning as a legitimate technical request.
 
 ---
 
@@ -218,7 +218,7 @@ Query: `"kartulid on täna poes väga odavad, aga ma tahan osta hoopis jalgratas
 │    ├── 🔗 Cosine Mean (Average Vibe): 0.0846
 │    └── 📈 Final Hybrid Score:          0.2198
 │ 📊 [TOXIC-BERT TELEMETRY]:
-│    ├──    toxic          : 0.0319 (threshold 0.75)
+│    ├──    toxic          : 0.0319
 │    (all other labels near 0.00)
 │ ⚡ [THINKING]: Low matrix match. Safe defaulting to MainCore.
 └── [V6-AUDIT END] ──────────────────────────────────────────────────────
